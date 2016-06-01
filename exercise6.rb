@@ -13,11 +13,13 @@ end
 
 #puts grocery_list[0..count]    ####Output all items different way
 
-grocery_list.include? ("banana") #Does it include banana??
-if true
-	puts "Buy Bananas, you forgot to add to list"
-else
+#grocery_list.include?('banana') #Does it include banana??
+#^^^^^Above didnt work
+
+if grocery_list.index('banana') #Check if banana is on list
 	puts "You do not need Bananas"
+else
+	puts "Buy Bananas, you forgot to add to list"
 end
 
 puts "The second item on the list is #{grocery_list[1]}"
