@@ -15,16 +15,17 @@ end
 
 grocery_list.include? ("banana") #Does it include banana??
 if true
-	puts "Buy Bananas"
+	puts "Buy Bananas, you forgot to add to list"
 else
 	puts "You do not need Bananas"
 end
 
 puts "The second item on the list is #{grocery_list[1]}"
 
-grocery_list.pop #This removes the last item, TP not salmon :S
+grocery_list.delete("salmon") #This removes the last item, TP not salmon :S
+##salmon_index = grocery_list.index("salmon")
+puts"Here is the updated list without Salmon:"
 
-puts"Here is the updated list without Salmon"
 grocery_list.map do |item|    #Output all items and add the *
 	puts "* " + item
 end
