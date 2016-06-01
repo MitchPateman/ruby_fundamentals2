@@ -1,3 +1,4 @@
-grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+grocery_list = ["carrots", "toilet paper", "apples", "salmon", "rice"]
 
-puts grocery_list[0]
+puts "* " + grocery_list.join(" * ")
+# puts grocery_list
